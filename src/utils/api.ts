@@ -1,4 +1,4 @@
-const BASE_URL = process.env.NEXT_PUBLIC_API_URL || "https://final-eco-2l4j.onrender.com/api";
+const BASE_URL = process.env.NEXT_PUBLIC_API_URL || "https://final-eco-2l4j.onrender.com";
 
 export function getToken(): string | null {
   if (typeof window !== "undefined") {
