@@ -81,7 +81,7 @@ def run_migrations():
 # Frontend runs on http://localhost:3000, so we allow it specifically
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000", "http://127.0.0.1:3000"],
+    allow_origins=["http://localhost:3000", "https://final-eco.vercel.app/"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
