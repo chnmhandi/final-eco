@@ -79,7 +79,7 @@ def run_migrations():
 
 # Enable CORS middleware
 # Frontend runs on http://localhost:3000, so we allow it specifically
-origins = ["http://localhost:3000", "http://127.0.0.1:3000"]
+origins = ["http://localhost:3000", "https://final-eco.vercel.app/"]
 if settings.FRONTEND_URL:
     origins.append(settings.FRONTEND_URL)
     origins.append(settings.FRONTEND_URL.rstrip("/"))
