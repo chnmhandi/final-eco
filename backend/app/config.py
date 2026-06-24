@@ -23,6 +23,9 @@ class Settings:
     RESEND_API_KEY: str = os.getenv("RESEND_API_KEY", "re_Q6zHoKzE_PK7jm8nKrR7iS1GKc3gg6L1v")
     FROM_EMAIL: str = os.getenv("FROM_EMAIL", "onboarding@resend.dev")
     
+    FRONTEND_URL: str = os.getenv("FRONTEND_URL", "https://final-eco.vercel.app")
+    BACKEND_URL: str = os.getenv("BACKEND_URL", "https://final-eco-2l4j.onrender.com")
+    
     RAW_DATABASE_URL: str = os.getenv("DATABASE_URL", "postgresql://postgres:Chinmay@31handi@db.wahtdkceafdhuyrfceub.supabase.co:5432/postgres")
     
     @property

@@ -330,7 +330,7 @@ def send_invoice_generated_email(invoice, order, email: str):
     <p><strong>Total Amount:</strong> ${float(invoice.total):.2f}</p>
     <p>You can view and print the full receipt online at any time by clicking the button below:</p>
     <div style="text-align: center;">
-        <a href="http://127.0.0.1:8000/api/invoices/orders/{order.id}/invoice/html" class="btn" style="color: #ffffff;">View Receipt</a>
+        <a href="{settings.BACKEND_URL}/api/invoices/orders/{order.id}/invoice/html" class="btn" style="color: #ffffff;">View Receipt</a>
     </div>
     """
     html_content = get_base_template("Invoice Generated | AURA", content_html)
